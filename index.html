@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoWiz - Transforming Education Online</title>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list another">
+            <div class="logo"><img src="assets/LW.jpg" alt="LingoWiz logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#videotutorials">Video Tutorials</a>
+                    <a href="#Liveassesment">Live assesment</a>
+                    <a href="#doubtsolving">Doubt Solving Online</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The future of education is here</p>
+                <p class="text-small">In this world of 7 billion people, we need modern education resources to take the
+                    economy ahead</p>
+                <div class="buttons">
+                    <button class="btn">SUBSCRIBE</button>
+                    <button class="btn">Watch content</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="assets/LW.jpg" alt="Logo ki image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Let's Grow Together</p>
+            <p class="sectionSubTag text-small">Welcome to the best website that helps you learn. Embark on a journey of knowledge and discovery with LingoWiz. In this era of limitless possibilities, education is the key to unlocking your full potential. Our platform is not just about learning; it's about growth, empowerment, and the transformation of dreams into reality.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="assets/LW.jpg" alt="" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="container mt-5 mb-5 card-container" id="cards-container">
+        <h2 class="text-center">Explore LingoWiz</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-inner">
+                        <div class="card-face">
+                            <img src="assets/LW.jpg" class="card-img-top" alt="Card Image">
+                            <h5 class="card-title">About Us</h5>
+                            <p class="card-text">LingoWiz is dedicated to transforming education online. Discover our journey and commitment to providing quality education resources.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="card-back">
+                            <p>Learn more about our team, mission, and vision. Join us in the pursuit of knowledge and excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-inner">
+                        <div class="card-face">
+                            <img src="assets/LW.jpg" class="card-img-top" alt="Card Image">
+                            <h5 class="card-title">Our Motive</h5>
+                            <p class="card-text">At LingoWiz, our motive is to make education accessible and engaging for everyone. Explore how we are making a difference.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="card-back">
+                            <p>Discover our motive and the passion that drives us to create a positive impact on education.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-inner">
+                        <div class="card-face">
+                            <img src="assets/LW.jpg" class="card-img-top" alt="Card Image">
+                            <h5 class="card-title">Our Vision</h5>
+                            <p class="card-text">Explore the vision of LingoWiz. We envision a future where education knows no boundaries, and learning becomes a lifelong journey.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        <div class="card-back">
+                            <p>Learn about our vision for the future and how we strive to shape the landscape of online education.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continue with other sections as needed -->
+
+    <section class="contact">
+        <h2 class="text-center">CONTACT US</h2>
+        <div class="form">
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input type="text" name="name" id="name" placeholder="Enter Your phone">
+            <input type="text" name="name" id="name" placeholder="Enter Your Email">
+            <input type="text" name="name" id="name" placeholder="Enter Your Concern in brief">
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2027 - LingoWiz.com- All rights reserved
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Show cards when scrolled down
+        window.addEventListener('scroll', function () {
+            var cardsContainer = document.getElementById('cards-container');
+            var position = cardsContainer.getBoundingClientRect();
+
+            // If the cards container is in the viewport, show it
+            if (position.top >= 0 && position.bottom <= window.innerHeight) {
+                cardsContainer.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
+
